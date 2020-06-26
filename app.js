@@ -409,7 +409,8 @@
 
 // Assignment 6
 // Chapter 35-38
-
+// Write a function that displays current date & time in your
+// browser.
 // task#1
 // showdate();
 // function showdate(){
@@ -417,6 +418,8 @@
 // document.write(date);}
 
 // task#2
+// 2. Write a function that takes first & last name and then it
+// greets the user using his full name.
 // inputbiodata();
 // function inputbiodata(){
 // var firstName=prompt("Enter first name");
@@ -511,7 +514,7 @@
      
 //     function calculataSquare(base,perpandicular){
 //         hypo=Math.pow(base,2)+Math.pow(perpandicular,2);
-//                 return(hypo);
+//               return(hypo);
 //     }
 // return(Math.sqrt(hypo));
 // }
@@ -531,58 +534,61 @@
 // alert(a*b);
 // }
 
-// // task #10****
-// // var word=prompt("Enter any palindrome Word");
-// // document.write(word[0]);
+// // task #10
+// var word=prompt("Enter any palindrome Word");
+// word=word.toLowerCase();
 // var check="";
-// // for(var i=0;i<word.length;i++){
-// // 
-//   check+=word;
+// for(var i=word.length-1;i>=0;i--){
+
+//   check+=word[i];
 // }
-// //   if(word===check)
-// //   {
-// //     document.write("<br>"+word+" is Palindrome");
-// //   }
-// //   else{
-// //     document.write("<br>"+word+" is Not Palindrome");
-// //   }
-// //   
-// // 
+//   if(word===check)
+//   {
+//     document.write("<br>"+word+" is Palindrome");
+//   }
+//   else{
+//     document.write("<br>"+word+" is Not Palindrome");
+//   }
+  
+
 
 
 // task #11***
-// function capital(enterString){
+// function capital(){
 // var enterString=prompt("Enter any string");
 // document.write("User Input "+enterString);
 // var wholeLine=enterString.toLowerCase().split(" ");
-// for(var i=0;i<.length;i++){
-// wholeLine  =wholeLine[i][0].toUpperCase()+wholeLine[i].slice(1);
+// document.write(wholeLine)
+// for(var i=0;i<enterString.length;i++)
+// wholeLine[i]  =wholeLine[i][0].toUpperCase()+wholeLine[i].slice(1);
 // }
-// document.write("<br>Title Case "+wholeLine.join(" "));}
+// document.write("<br>Title Case "+wholeLine.join(" "));
 
 // capital();
 
 
 
+
 // task #12**
-// function long(string){
-//   var long="";
-//   var word=string.split(" ")
-//   for(var i=0;i<word.length;i++){
-//     if(word.charAt[i]>long.charAt[i])
-//     {
-//       word=long;
-//       alert(word)
-//     }
-//   }
-//   return word;
-// }
-// var string=prompt("Web Development Tutorial");
-// long(string);
-// alert(u);
+function long(string){
+  var long="";
+  var word=string.split(" ")
+  document.write(word);
+  for(var i=0;i<word.length;i++){
+    if(word.charAt[i]>long.charAt[i])
+    {
+      word=long;
+      alert(word)
+    }
+  }
+  return word;
+}
+var string="Web Development Tutorial";
+long(string);
+alert(string);
 
 // task #13
-// var count=0;
+// var count="";
 // var string=prompt("Enter string");
 // var letter=prompt("Enter letter");
 // checker(string,letter);
@@ -592,20 +598,20 @@
 //     count++;
 //   }
 // }
-// document.write("<BR> Occurance of a specified letter "+letter+" within a string "+string+" is" +count);
+// document.write("<br> Occurance of a specified letter  "+letter+" within a string <br>"+string+" is  " +count);
 
 
 // task 14
 // var rad=prompt("Enter radius");
 // calCircumference(rad);
 // function calCircumference(rad){
-//   var r=2*2.14*rad;
-//   document.write("circumference is "+r);
+//   var pi=2*Math.PI*rad;
+//   pi=pi.toFixed(0);
+//     document.write("<br>Circumference is "+pi);
 // }
 // calArea(rad);
 // function calArea(rad){
-//   var t=2.14*rad*rad
-// ;
+//   var area=Math.PI*Math.pow(rad,2);
+//   are=area.toFixed(0);
+// document.write("<br>Area is "+are);}
 
-// document.write("Area is "+t);}
-}
